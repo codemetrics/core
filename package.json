@@ -1,0 +1,32 @@
+{
+  "name": "codemetrics-core",
+  "version": "1.0.0",
+  "description": "Core module for Codemetrics",
+  "main": "dist/index.js",
+  "scripts": {
+    "postinstall": "compile",
+    "compile": "babel index.js --out-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codemetrics/core.git"
+  },
+  "keywords": [
+    "codemetrics",
+    "quality",
+    "tools"
+  ],
+  "author": "Maxime Warnier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codemetrics/core/issues"
+  },
+  "homepage": "https://github.com/codemetrics/core#readme",
+  "devDependencies": {
+    "babel": "^6.1.18",
+    "babel-cli": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18"
+  }
+}

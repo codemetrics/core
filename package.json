@@ -4,10 +4,10 @@
   "description": "Core module for Codemetrics",
   "main": "dist/index.js",
   "scripts": {
-    "postinstall": "compile",
     "compile": "babel index.js --out-dir dist",
+    "postinstall": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "compile"
+    "prepublish": "npm run compile"
   },
   "repository": {
     "type": "git",

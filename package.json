@@ -1,11 +1,10 @@
 {
   "name": "codemetrics-core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Core module for Codemetrics",
   "main": "dist/index.js",
   "scripts": {
     "compile": "babel index.js --out-dir dist",
-    "postinstall": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "npm run compile"
   },
